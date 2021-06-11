@@ -8,7 +8,7 @@ if ( process.argv.length<3 ) {
 const password = process.argv[2]
 
 const url =
-  `mongodb+srv://fullstack:Ramji@369@cluster0.nwubd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+  `mongodb+srv://fullstack:Satya@129@cluster0.nwubd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
@@ -20,8 +20,8 @@ const noteSchema = new mongoose.Schema({
 const Note = mongoose.model('Note', noteSchema)
 
 const note = new Note({
-  name: `Ramji`,
-  telephone: 9100226132
+  name: `Rakesh`,
+  telephone: 9553825999
 })
 
 note.save().then(response => {
