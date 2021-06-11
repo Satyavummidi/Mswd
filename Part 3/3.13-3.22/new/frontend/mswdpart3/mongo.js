@@ -8,7 +8,7 @@ if ( process.argv.length<3 ) {
 const password = process.argv[2]
 
 const url =
-  `mongodb+srv://fullstack:Ramji@369@cluster0.nwubd.mongodb.net/personDatabase?retryWrites=true&w=majority`
+  `mongodb+srv://fullstack:Satya@129@cluster0.nwubd.mongodb.net/personDatabase?retryWrites=true&w=majority`
 
 mongoose.connect(url, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false, useCreateIndex: true })
 
@@ -20,8 +20,8 @@ const personSchema = new mongoose.Schema({
 const Person = mongoose.model('Person', personSchema)
 const number =mongoose.model('Person',personSchema)
 const person = new Person({
-  name: `B.Vasantha`,
-  number: 9290552880
+  name: `V.Rakesh`,
+  number: 9553825999
 })
 
 
